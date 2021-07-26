@@ -28,7 +28,7 @@
 
 .popular-card{
   width: 90%;
-  height: 130px;
+  height: 150px;
   border-radius: 12px;
   margin: 20px auto;
   padding: 5px;
@@ -51,11 +51,21 @@
   margin-bottom: 30px;
 }
 .popular-card-description{
+  position: relative;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
   margin: 15px;
+}
+.popular-card .rating{
+  position: absolute;
+  bottom: 0px;
+  /* margin-top: 10%; */
 }
 .popular-card i{
   color: blue;
 }
+
 
 /* activity cards */
 
