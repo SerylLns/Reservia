@@ -2,12 +2,12 @@
 @import "./components/tags.css";
 @import "./components/flat-card.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap");
 
 body {
   margin: 20px 40px 0px 40px;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 /* HEADER */
 header {
@@ -22,7 +22,7 @@ header img {
 }
 
 nav {
-  margin-top: 20px;
+  margin: 20px 60px;
   display: flex;
 }
 
@@ -33,6 +33,13 @@ nav h5 {
   cursor: pointer;
 }
 nav h5:first-child {
+  color: blue;
+}
+.subscribe {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  font-size: 1em;
   color: blue;
 }
 nav h5:first-child::before {
@@ -63,8 +70,10 @@ h3 {
 }
 
 .info-city i {
-  background-color: white;
-  color: #0065fc;
+  background-color: #0065fc;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 50%;
   margin-right: 20px;
 }
 .info-city p {
@@ -85,7 +94,7 @@ h3 {
   padding: 25px;
   border-radius: 16px;
 }
-.left-part-1 h3{
+.left-part-1 h3 {
   margin: 20px 0px;
 }
 
@@ -104,14 +113,22 @@ h3 {
   padding: 20px;
   border-radius: 16px;
 }
-.right-part-1 h3{
+.right-part-1 h3 {
   margin: 20px 10px;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right-header i {
+  font-size: 1.5em;
 }
 /* 2nd part cards */
 .part-2 {
   margin-top: 50px;
 }
-.part-2 h3{
+.part-2 h3 {
   margin: 20px 0px;
 }
 .activity-cards {
@@ -144,10 +161,80 @@ footer {
   width: 100vw;
   background-color: #f2f2f2;
 }
-.footer-1{
+.footer-1 {
   margin-left: 0px;
 }
 
-footer div{
+footer div {
   margin-right: 20%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  header {
+    margin: 10px 20px 0px 20px;
+    display: block;
+  }
+  .subscribe {
+    top: 0px;
+    right: 0px;
+  }
+
+  nav {
+    justify-content: space-around;
+    margin: 30px 0px;
+    font-weight: 100;
+  }
+  nav h5:first-child::before {
+    bottom: 0px;
+    width: 250%;
+    left: 0;
+    top: 150%;
+    height: 3px;
+  }
+  nav h5:last-child {
+    color: gray;
+  }
+
+  .filter-section {
+    /* margin-top: 70px; */
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 60px 20px 0px 20px;
+
+  }
+  .filter-section h3 {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .part-1 {
+    flex-direction: column-reverse;
+  }
+  .right-part-1 {
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 0px;
+    /* margin: 0px 0px 0px -20px; */
+  }
+  .left-part-1 {
+    width: 100%;
+    background-color: #fff;
+  }
+  .flat-grid {
+    flex-direction: column;
+  }
+  .flat-card {
+    width: 100%;
+    box-shadow: 0px 0px 3px lightgray;
+  }
+  .activity-cards {
+    width: 100%;
+
+    flex-direction: column;
+  }
 }

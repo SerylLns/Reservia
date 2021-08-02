@@ -8,8 +8,8 @@
 
 .tags {
   display: flex;
-  justify-content: space-between;
-  height: 50px;
+  /* justify-content: space-between; */
+  height: 40px;
   margin-left: 20px;
   width: 70%;
 }
@@ -17,17 +17,19 @@
 .tag {
   margin: 0 25px;
   display: flex;
-  width: 30%;
+  padding: 0px 10px 0px 0px;
+  /* width: 250px; */
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #DEECFF;
+  border: 2px solid #deecff;
   border-radius: 50px;
+  font-weight: 600;
 }
 .tag-icon {
   background-color: #deecff;
   color: blue;
-  width: 30%;
-  height: 110%;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   margin-left: -5px;
   display: flex;
@@ -35,11 +37,49 @@
   justify-content: center;
 }
 .tag-text {
-  width: 70%;
+  margin-left: 5px;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.tag-text p{
+.tag-text p {
   margin: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .filter {
+    display: block;
+  }
+  .tags {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+  .tag {
+    font-weight: 600;
+    /* width: 60%; */
+    height: 35px;
+    margin: 10px 7px;
+    width: auto;
+    padding: 10px 10px 10px 0px;
+  }
+  .tag:last-child {
+    width: 65%;
+    padding: 10px 10px 10px 0px;
+  }
+  .tag:last-child .tag-text {
+    width: 70%;
+  }
+  .tag-text {
+    margin-left: 15px;
+    width: 55%;
+  }
+  .tag-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: -10px;
+  }
 }

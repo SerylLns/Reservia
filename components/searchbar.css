@@ -31,3 +31,12 @@
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+
+@media screen and (max-width: 600px) {
+  .searchbar {
+    margin: 20px 0px;
+  }
+  .buttonsearch {
+    padding: 13px 5px;
+  }
+}
