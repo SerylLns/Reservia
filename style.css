@@ -108,7 +108,7 @@ h3 {
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 16px;
@@ -232,9 +232,34 @@ footer div {
     width: 100%;
     box-shadow: 0px 0px 3px lightgray;
   }
+  .part-2{
+    width: 116vw;
+  }
   .activity-cards {
-    width: 100%;
-
+    width: 90%;
+    margin: auto;
     flex-direction: column;
+    height: auto;
+  }
+  .activity-cards:only-child{
+    margin-bottom: 30px;
+  }
+  .column-activity .activity-card:first-child{
+    margin-bottom: 20px;
+  }
+  footer{
+    flex-direction: column;
+    width: 110%;
+    margin: 50px 0 0 0;
+    font-size: 1.3em;
+  }
+  .footer-1{
+    margin-left: 10px;
+  }
+    .footer-2{
+    margin-left: 10px;
+  }
+    .footer-3{
+    margin-left: 10px;
   }
 }
