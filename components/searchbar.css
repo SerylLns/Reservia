@@ -37,6 +37,15 @@
     margin: 20px 0px;
   }
   .buttonsearch {
-    padding: 13px 5px;
+    width: 50px;
+    padding: 13px 0px;
+    color: transparent;
+    background-image: url(../images/search-12-32.png);
+    background-clip: padding-box;
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
   }
 }
