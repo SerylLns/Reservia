@@ -14,10 +14,11 @@ header {
   height: 10vh;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 header img {
+  margin-top: 10px;
   width: 30%;
 }
 
@@ -29,7 +30,7 @@ nav {
 nav a {
   text-decoration: none;
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0px 30px;
   font-size: 1em;
   cursor: pointer;
@@ -63,7 +64,7 @@ nav h5:last-child {
 
 .filter-section p,
 h3 {
-  margin: 0px;
+  margin: 5px 0px;
 }
 
 .info-city {
@@ -120,6 +121,9 @@ h3 {
 }
 .right-part-1 h3 {
   margin: 20px 10px;
+}
+.see-more{
+  margin: 0;
 }
 .right-header {
   display: flex;
@@ -215,15 +219,16 @@ footer div {
     width: 100%;
     font-size: 1.2em;
     font-weight: 600;
-    margin: 70px 20px 0px 20px;
+    margin: 100px 20px 0px 20px;
 
   }
   .filter-section h3 {
     width: 80%;
-    margin: 30px 10px 10px;
+    margin: 30px 10px 10px 10px;
   }
   .filter-section p {
     margin-left: 10px;
+    margin-bottom: 15px;
     font-weight: 300;
     font-size: 0.9em;
   }
@@ -245,7 +250,7 @@ footer div {
   }
   .flat-card {
     width: 100%;
-    box-shadow: 0px 0px 3px lightgray;
+    /* box-shadow: 0px 0px 3px lightgray; */
   }
   .part-2{
     width: 116vw;
