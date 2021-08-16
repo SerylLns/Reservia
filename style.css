@@ -178,7 +178,41 @@ footer {
 footer div {
   margin-right: 20%;
 }
-
+@media screen and (max-width: 800px) {
+  .filter-section{
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .filter{
+    flex-wrap: wrap;
+  }
+  .tags{
+    flex-wrap: wrap;
+  }
+  .tag{
+    margin-bottom: 15px;
+  }
+  .info-city{
+    padding-top: 60px;
+  }
+  .left-part-1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .right-part-1 {
+    width: 100%;
+    padding: 20px 40px;
+  }
+  .activity-cards{
+    flex-direction: column;
+  }
+  .part-2{
+    height: 250vh;
+  }
+  .activity-card{
+    height: auto;
+  }
+}
 @media screen and (max-width: 600px) {
   body {
     margin: 0;
