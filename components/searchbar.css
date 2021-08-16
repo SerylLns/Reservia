@@ -37,9 +37,13 @@
   .searchbar {
     margin: 20px 10px;
   }
+  .searchbar input {
+    width: 70%;
+  }
   .buttonsearch {
     width: 50px;
     padding: 13px 0px;
+    border-radius: 12px;
     color: transparent;
     background-image: url(../images/search-12-32.png);
     background-clip: padding-box;
