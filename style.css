@@ -123,7 +123,7 @@ h3 {
 .right-part-1 h3 {
   margin: 20px 10px;
 }
-.see-more{
+.see-more {
   margin: 0;
 }
 .right-header {
@@ -179,20 +179,24 @@ footer div {
   margin-right: 20%;
 }
 @media screen and (max-width: 800px) {
-  .filter-section{
+  body::-webkit-scrollbar {
+    background-color: #fff;
+  }
+
+  .filter-section {
     width: 100%;
     padding-bottom: 30px;
   }
-  .filter{
+  .filter {
     flex-wrap: wrap;
   }
-  .tags{
+  .tags {
     flex-wrap: wrap;
   }
-  .tag{
+  .tag {
     margin-bottom: 15px;
   }
-  .info-city{
+  .info-city {
     padding-top: 60px;
   }
   .left-part-1 {
@@ -203,13 +207,13 @@ footer div {
     width: 100%;
     padding: 20px 40px;
   }
-  .activity-cards{
+  .activity-cards {
     flex-direction: column;
   }
-  .part-2{
+  .part-2 {
     height: 250vh;
   }
-  .activity-card{
+  .activity-card {
     height: auto;
   }
 }
@@ -218,6 +222,11 @@ footer div {
     margin: 0;
     width: 100vw;
     overflow-x: hidden;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+    display: none;
   }
   header {
     margin: 10px 20px 0px 20px;
@@ -255,7 +264,6 @@ footer div {
     font-size: 1.2em;
     font-weight: 600;
     margin: 100px 20px 0px 20px;
-
   }
   .filter-section h3 {
     width: 80%;
@@ -265,7 +273,10 @@ footer div {
     margin-left: 10px;
     margin-bottom: 15px;
     font-weight: 300;
-    font-size: 0.9em;
+    font-size: 0.8em;
+  }
+  .tag-text p {
+    font-weight: 700;
   }
   .part-1 {
     flex-direction: column-reverse;
@@ -287,7 +298,7 @@ footer div {
     width: 100%;
     /* box-shadow: 0px 0px 3px lightgray; */
   }
-  .part-2{
+  .part-2 {
     width: 116vw;
   }
   .activity-cards {
@@ -296,25 +307,25 @@ footer div {
     flex-direction: column;
     height: auto;
   }
-  .activity-cards:only-child{
+  .activity-cards:only-child {
     margin-bottom: 30px;
   }
-  .column-activity .activity-card:first-child{
+  .column-activity .activity-card:first-child {
     margin-bottom: 20px;
   }
-  footer{
+  footer {
     flex-direction: column;
     width: 110%;
     margin: 50px 0 0 0;
     font-size: 1.3em;
   }
-  .footer-1{
+  .footer-1 {
     margin-left: 10px;
   }
-    .footer-2{
+  .footer-2 {
     margin-left: 10px;
   }
-    .footer-3{
+  .footer-3 {
     margin-left: 10px;
   }
 }
